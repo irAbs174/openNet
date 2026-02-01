@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  log-server:
+    build: .
+    ports:
+      - "8000:8000"
+    command: python server.py
+    volumes:
+      - ./targets.json:/app/targets.json
+    restart: unless-stopped
+
+  checker:
+    build: .
+    depends_on:
+      - log-server
+    command: python main.py
+    volumes:
+      - ./targets.json:/app/targets.json
+    restart: unless-stopped
+

@@ -1,0 +1,27 @@
+GET / HTTP/1.1
+Host: 127.0.0.1:9999
+User-Agent: curl/8.17.0
+Accept: */*
+
+
+GET / HTTP/1.1
+Host: 127.0.0.1:9999
+User-Agent: curl/8.17.0
+Accept: */*
+
+
+GET / HTTP/1.1
+Host: 127.0.0.1:9999
+User-Agent: curl/8.17.0
+Accept: */*
+
+
+{"url": "example.com", "status": 200, "timestamp": 1705321234}
+{"url": "zarebin.ir", "status": 200, "timestamp": 1705321234}
+{}
+{}
+{}
+{"url": "zarebin.ir", "status": 200, "timestamp": 1705321234}
+{"url": "test.com", "status": 200, "timestamp": 1705321234}
+{"url": "test.com", "status": 200, "timestamp": 1705321234}
+{"url": "test.com", "status": 300, "timestamp": 1705321234}
